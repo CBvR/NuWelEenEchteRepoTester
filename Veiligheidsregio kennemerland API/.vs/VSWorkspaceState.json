@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Controllers",
+    "\\DAL",
+    "\\Services",
+    "\\Utils"
+  ],
+  "SelectedNode": "\\Controllers\\TaskHttpTrigger.cs",
+  "PreviewInSolutionExplorer": false
+}

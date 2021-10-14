@@ -1,0 +1,781 @@
+[
+  {
+    "name": "AddGoal",
+    "scriptFile": "Kennemerland API.dll",
+    "entryPoint": "Kennemerland.Controllers.GoalHttpTrigger.AddGoal",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Function",
+        "methods": [
+          "POST"
+        ],
+        "route": "goal"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "UpdateGoal",
+    "scriptFile": "Kennemerland API.dll",
+    "entryPoint": "Kennemerland.Controllers.GoalHttpTrigger.UpdateGoal",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Function",
+        "methods": [
+          "PUT"
+        ],
+        "route": "goal"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "AlterTasks",
+    "scriptFile": "Kennemerland API.dll",
+    "entryPoint": "Kennemerland.Controllers.GoalHttpTrigger.AlterTasks",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Function",
+        "methods": [
+          "PUT"
+        ],
+        "route": "goal/alterTasks"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "GetGoalById",
+    "scriptFile": "Kennemerland API.dll",
+    "entryPoint": "Kennemerland.Controllers.GoalHttpTrigger.GetGoalById",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Function",
+        "methods": [
+          "GET"
+        ],
+        "route": "goal/{goalId}"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "DeleteGoal",
+    "scriptFile": "Kennemerland API.dll",
+    "entryPoint": "Kennemerland.Controllers.GoalHttpTrigger.DeleteGoal",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Function",
+        "methods": [
+          "DELETE"
+        ],
+        "route": "goal/{goalId}"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "login",
+    "scriptFile": "Kennemerland API.dll",
+    "entryPoint": "Kennemerland.Controllers.LoginHttpTrigger.login",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Anonymous",
+        "methods": [
+          "post"
+        ]
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "AddReport",
+    "scriptFile": "Kennemerland API.dll",
+    "entryPoint": "Kennemerland.Controllers.ReportHttpTrigger.AddReport",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Function",
+        "methods": [
+          "POST"
+        ],
+        "route": "report"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "GetReportById",
+    "scriptFile": "Kennemerland API.dll",
+    "entryPoint": "Kennemerland.Controllers.ReportHttpTrigger.GetReportById",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Function",
+        "methods": [
+          "GET"
+        ],
+        "route": "report/{reportId}"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "AddTask",
+    "scriptFile": "Kennemerland API.dll",
+    "entryPoint": "Kennemerland.Controllers.TaskHttpTrigger.AddTask",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Function",
+        "methods": [
+          "POST"
+        ],
+        "route": "task"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "UpdateTask",
+    "scriptFile": "Kennemerland API.dll",
+    "entryPoint": "Kennemerland.Controllers.TaskHttpTrigger.UpdateTask",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Function",
+        "methods": [
+          "PUT"
+        ],
+        "route": "task"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "CompletedTask",
+    "scriptFile": "Kennemerland API.dll",
+    "entryPoint": "Kennemerland.Controllers.TaskHttpTrigger.CompletedTask",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Function",
+        "methods": [
+          "PUT"
+        ],
+        "route": "task/completed"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "GetTaskById",
+    "scriptFile": "Kennemerland API.dll",
+    "entryPoint": "Kennemerland.Controllers.TaskHttpTrigger.GetTaskById",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Function",
+        "methods": [
+          "GET"
+        ],
+        "route": "task/{taskId}"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "GetAllTasks",
+    "scriptFile": "Kennemerland API.dll",
+    "entryPoint": "Kennemerland.Controllers.TaskHttpTrigger.GetAllTasks",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Function",
+        "methods": [
+          "GET"
+        ],
+        "route": "task"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "DeleteTask",
+    "scriptFile": "Kennemerland API.dll",
+    "entryPoint": "Kennemerland.Controllers.TaskHttpTrigger.DeleteTask",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Function",
+        "methods": [
+          "DELETE"
+        ],
+        "route": "task/{taskId}"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "AddTeam",
+    "scriptFile": "Kennemerland API.dll",
+    "entryPoint": "Kennemerland.Controllers.TeamHttpTrigger.AddTeam",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Function",
+        "methods": [
+          "POST"
+        ],
+        "route": "team"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "UpdateTeam",
+    "scriptFile": "Kennemerland API.dll",
+    "entryPoint": "Kennemerland.Controllers.TeamHttpTrigger.UpdateTeam",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Function",
+        "methods": [
+          "PUT"
+        ],
+        "route": "team"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "AddUserToTeam",
+    "scriptFile": "Kennemerland API.dll",
+    "entryPoint": "Kennemerland.Controllers.TeamHttpTrigger.AddUserToTeam",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Function",
+        "methods": [
+          "PUT"
+        ],
+        "route": "team/addUser"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "GetTeamById",
+    "scriptFile": "Kennemerland API.dll",
+    "entryPoint": "Kennemerland.Controllers.TeamHttpTrigger.GetTeamById",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Function",
+        "methods": [
+          "GET"
+        ],
+        "route": "team/{teamId}"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "GetTeams",
+    "scriptFile": "Kennemerland API.dll",
+    "entryPoint": "Kennemerland.Controllers.TeamHttpTrigger.GetTeams",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Function",
+        "methods": [
+          "GET"
+        ],
+        "route": "team"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "DeleteTeam",
+    "scriptFile": "Kennemerland API.dll",
+    "entryPoint": "Kennemerland.Controllers.TeamHttpTrigger.DeleteTeam",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Function",
+        "methods": [
+          "DELETE"
+        ],
+        "route": "team/{teamId}"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "AddUser",
+    "scriptFile": "Kennemerland API.dll",
+    "entryPoint": "Kennemerland.Controllers.UserHttpTrigger.AddUser",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Function",
+        "methods": [
+          "POST"
+        ],
+        "route": "user"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "UpdateUser",
+    "scriptFile": "Kennemerland API.dll",
+    "entryPoint": "Kennemerland.Controllers.UserHttpTrigger.UpdateUser",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Function",
+        "methods": [
+          "PUT"
+        ],
+        "route": "user"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "GetUserById",
+    "scriptFile": "Kennemerland API.dll",
+    "entryPoint": "Kennemerland.Controllers.UserHttpTrigger.GetUserById",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Function",
+        "methods": [
+          "GET"
+        ],
+        "route": "user/{userId}"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "GetUserTasks",
+    "scriptFile": "Kennemerland API.dll",
+    "entryPoint": "Kennemerland.Controllers.UserHttpTrigger.GetUserTasks",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Function",
+        "methods": [
+          "GET"
+        ],
+        "route": "user/getTasks/{userId}"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "GetUsers",
+    "scriptFile": "Kennemerland API.dll",
+    "entryPoint": "Kennemerland.Controllers.UserHttpTrigger.GetUsers",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Function",
+        "methods": [
+          "GET"
+        ],
+        "route": "user"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "DeleteUser",
+    "scriptFile": "Kennemerland API.dll",
+    "entryPoint": "Kennemerland.Controllers.UserHttpTrigger.DeleteUser",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Function",
+        "methods": [
+          "DELETE"
+        ],
+        "route": "user/{userId}"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "RenderSwaggerDocument",
+    "scriptFile": "Microsoft.Azure.Functions.Worker.Extensions.OpenApi.dll",
+    "entryPoint": "Microsoft.Azure.Functions.Worker.Extensions.OpenApi.DefaultOpenApiHttpTrigger.RenderSwaggerDocument",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Anonymous",
+        "methods": [
+          "GET"
+        ],
+        "route": "swagger.{extension}"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "RenderOpenApiDocument",
+    "scriptFile": "Microsoft.Azure.Functions.Worker.Extensions.OpenApi.dll",
+    "entryPoint": "Microsoft.Azure.Functions.Worker.Extensions.OpenApi.DefaultOpenApiHttpTrigger.RenderOpenApiDocument",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Anonymous",
+        "methods": [
+          "GET"
+        ],
+        "route": "openapi/{version}.{extension}"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "RenderSwaggerUI",
+    "scriptFile": "Microsoft.Azure.Functions.Worker.Extensions.OpenApi.dll",
+    "entryPoint": "Microsoft.Azure.Functions.Worker.Extensions.OpenApi.DefaultOpenApiHttpTrigger.RenderSwaggerUI",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Anonymous",
+        "methods": [
+          "GET"
+        ],
+        "route": "swagger/ui"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "RenderOAuth2Redirect",
+    "scriptFile": "Microsoft.Azure.Functions.Worker.Extensions.OpenApi.dll",
+    "entryPoint": "Microsoft.Azure.Functions.Worker.Extensions.OpenApi.DefaultOpenApiHttpTrigger.RenderOAuth2Redirect",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "type": "HttpTrigger",
+        "direction": "In",
+        "authLevel": "Anonymous",
+        "methods": [
+          "GET"
+        ],
+        "route": "oauth2-redirect.html"
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  }
+]
